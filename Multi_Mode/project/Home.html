@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Multi_Mode Student's Hostel Booking & Accommodation System</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img class="Logo-image" src="images/Hostels Logo.jpg"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html"target="_blank">HOME</a></li>
+                    <li><a href="About.html"target="_blank">ABOUT US</a></li>
+                    <li><a href="Payment.html"target="_blank">PAYMENT</a></li>
+                    <li><a href="CustomerCare.html"target="_blank">CUSTOMER CARE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+     <div class="text-box">
+        <h1>Multi-Mode Hostels & Accommodation</h1>
+        <p>Students all over Kenya doesn't have to worry now as hostel's 
+            acquisition and bookings is now made easy and simple. <br>All 
+            you've got to do is visit our webapp page from the conformt
+            of you seat, locate the hostels over the map, book, and pay.
+            <br>Move in any time you'd want, provided payments have been processed.
+        </p>
+        <a href="About.html" target="_blank" class="hero-btn">Visit us to know More</a>
+     </div> 
+    </section>
+
+
+
+<!---------Javascript for Toggle Menu Response With a Variable and a Function------------->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+<!-----New Section: "Rooms/Hostels we offer"----->
+<section class="Rooms">
+    <h1> Rooms Available with Us </h1>
+    <p>Quality with Affordability</p>
+<!---3 Columns Content on the section with immediate description--->
+    <div class="row">
+        <div class="Rooms-col">
+            <h3>County-based</h3>
+            <p>These are rooms that are sorted and filtered based on the counties they are located. The main aim is to easily enlsit Studuent's accommodation rooms with reference to the county in which the various institutions hails.</p>
+        </div>
+        <div class="Rooms-col">
+            <h3>Region-based</h3>
+            <p>This cartegory seeks to enlist rooms and student's accommodation with reference to slightly expansive geographical regions i.e provincial level such as Central Region of Kenya, Western Region, and regions like North Eastern.</p>
+        </div>
+        <div class="Rooms-col">
+            <h3>School-based</h3>
+            <p>Highlights rooms and accommodation which are strictly issued and managed by the learning institutions. It covers the list of hostels that are rigistered to be ONLY available under the reach of the school's system. </p>
+        </div>
+    </div>
+</section>
+<!-------Some of Our Hostels------->
+<section class="Hostels">
+    <h1>Our Hostels</h1>
+    <p>Students all over Kenya doesn't have to worry now as hostel's 
+        acquisition and bookings is now made easy and simple.</p>
+    
+        <div class="row">
+            <div class="column">
+              <img src ="images/beds.jpg" alt="Image 1">
+              <p>Kshs. 4000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.2983858,36.7595368," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the first hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 1st hostel -->
+            </div>
+            <div class="column">
+              <img src="images/splitRoom.jpg" alt="Image 2">
+              <p>Kshs. 4000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.0495414,34.4655326," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the second hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 2nd hostel -->
+            </div>
+            <div class="column">
+              <img src="images/beds.jpg" alt="Image 3">
+              <p>Kshs. 4000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.4791237,36.9562375," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the third hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 3rd hostel -->
+            </div>
+            <div class="column">
+              <img src="images/splitRoom.jpg" alt="Image 4">
+              <p>Kshs. 8000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.291971,36.8108873," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the forth hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 4th hostel -->
+            </div>
+            <div class="column">
+              <img src="images/beds.jpg" alt="Image 5">
+              <p>Kshs. 8000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.3054436,36.7705357," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the fifth hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 5th hostel -->
+            </div>
+            <div class="column">
+              <img src="images/splitRoom.jpg" alt="Image 6">
+              <p>Kshs. 8000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.3054436,36.7705357," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the sixth hostel -->
+              <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 6th hostel -->
+            </div>
+            <div class="column">
+            <img src ="images/beds.jpg" alt="Image 1">
+            <p>Kshs. 12000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=--1.2759424,36.8210905," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the seventh hostel -->
+            <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 7th hostel -->
+            </div>
+            <div class="column">
+            <img src="images/splitRoom.jpg" alt="Image 2">
+            <p>Kshs. 12000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.2173043,36.8889771," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the eith hostel -->
+            <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 8th hostel -->
+            </div>
+            <div class="column">
+            <img src="images/beds.jpg" alt="Image 3">
+            <p>Kshs. 12000/Quarterly <a href="https://www.google.com/maps/search/?api=1&query=-1.3167959,36.8262439," class="map" target="_blank">View on Map <!-- Link to view the location on Google Maps hostel --></p> <!-- Price for the 9th hostel -->
+            <a href="payment_page.html" class="btn">Select</a> <!-- Button for selecting the 9th hostel -->
+              </div>
+          </div>
+</section>
+
+<!-------Facilities--------->
+<section class="facilities">  
+    <h1>Our facilities</h1>
+    <p> Equiped with variety of Hostel themes, capable of giving comfort to the occupants, 
+        we've built the spaces to offer maximum conducive environment for leaners. </p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/studyRooms.jpg">
+            <h3>Bed-side Study Tables</h3>
+            <p>Equiped with study tables inside the bedrooms, convienint for disturbance-avasion and better concentration if need be.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/studyRoom2.jpg">
+            <h3>Open study Rooms</h3>
+            <p>You have the choice to study in a well ventilated area, experiencing the cool temperatures while skinnig your books.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/showerRoom1.jpg"></img>
+            <h3>Shower Rooms & Toilets</h3>
+            <p>State of the art flash toilets and shower bathrooms, well kept, and wothy to be a sitting room. Come feel the taste.</p>
+        </div>
+</section>
+
+<!------------Testimonials--------------->
+<section class="testimonials">
+    <h1>What our Students say</h1>
+    <p>They tried it and left their honest comments. Check through for yourself. </p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/student1.jpg">
+            <div>
+                <P>In the recent past, search for hostels haven't been this easy. That tedious process 
+                    pushed me into building a one stop site. Am delighted by my efforts. 😊😎😋😍😍. Quite imperative to try. Loved it.
+                </P>
+                <h3>Otieno George</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+    </div>
+
+    <div class="testimonials-col">
+        <img src="images/GeorgeBen2.jpg">
+            <div>
+            <P>George reffered me to the website. At first I thought it was a bluff!,
+                but now I'm conviced that Multi_Mode is the place to think of when looking for hostels. It ain't a bluff!🤣😎😎😎😎🤗
+            </P>
+                <h3>Benard Otieno</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+    </div>
+
+    <div class="testimonials-col">
+        <img src="images/TukStudents.jpg">
+            <div>
+                <P>Through my search as, I got the best of the best, when my friend Geoffrey
+                    chipped in to help physically locate the rooms. Turns out he had known about Multi_Mode😍😍</P>
+                <h3>Scolar Muchira</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+    </div>
+</div>
+</section>
+
+<!-----------Contact us Section----------->
+<section class="contactus">
+    <h1>Search Through Various Hostels and Accommodation Rooms </h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!--------------Footer Section------------>
+<section class="footer">
+    <h3>About Us</h3>
+    <p>Multi_Mode Hostesl & Accommodation is a webapp that allows prospective students to
+         search and book rooms <br> from their comfort, by simply visiting the website, browsing through the available
+          rooms available in different<br> levels, and can also be viewed
+           remotely by the aid of Google maps.</p>
+           <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-signal"></i>
+            <i class="fa fa-telegram"></i>
+           </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/Customer\ care.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    display:flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 80px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    text-decoration-color: rgb(83, 6, 132);
+    margin: 2px; 
+    margin-top: 1.5%;
+
+}
+/*Navigation Menu (Home,Services,Contacts...*/
+.nav-links ul li a{
+    color: #fefcfb;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 2px;
+}
+
+/*Underlines of the Menu Items*/
+ .nav-links ul li::after{ 
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e7c20e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+/*Hover effect of the underlines in the Navigational Menu*/
+.nav-links ul li:hover::after{
+    width: 0;
+}
+/*Text box with Web-Intro*/
+.text-box{
+    font-size: 18px;
+    width: 90%;
+    color: #ebd72b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/*Styles for Header1*/
+.text-box h1{
+    font-size: 55px;
+}
+/* styles for Paragraph*/
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #e2c42c;
+}
+/*Hero Button Positioning, text-styling*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+/*Hero-buton styles*/
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+/*Styles for the Logo Image*/
+.Logo-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+/*This part hides the Menu & X buttons from the wide screen, only to be visible over the small screen*/
+nav .fa{
+    display: none;
+}
+
+/*Media Query for screen sizes in small devices. Font size should be lower than one used in text-box h1*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    /*This section creates a pup-up menu for small screen devices: Phones&Tablets*/
+    .nav-links {
+        position:absolute;
+        background: #7d5407;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    /*styles for the close button to reapper while in small screen*/
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 18;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20%; 
+    } 
+}
+
+/*This defines the conctact us section*/
+.contactus {
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/PinacclePlaza.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contactus p {
+    margin-bottom: 40px;
+    padding: 0;
+    color:#fff3f3;
+}
+.contactus.href {
+    color:#fff;
+}
+/*This defines the footer section */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h3 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600px;
+}
+.icons .fa {
+    color: #e2c42c;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/*Form in Customer Care Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.company-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.company-info p {
+    margin-bottom: 10px;
+}
+.Google_Location {
+  font-family:sansserif;
+  color:#e7c20e;
+  text-align: right;
+}
